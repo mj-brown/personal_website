@@ -1,5 +1,6 @@
-//String will include the "Hello World" tier function.
-let message = 'Hello Eliot!';
+//I want to create an element in my footer of each page.
+const h2 = document.createElement('h2');
 
-//Calls the message into a dialogue box.
-window.alert(message);
+//I want that division to say a message.
+h2.innerHTML = 'This page is made with Aloha!';
+document.body.appendChild(h2);
