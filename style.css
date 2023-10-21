@@ -8,28 +8,17 @@ body {
     padding: 0;
     max-width: 100%;
     margin: 0 auto;
+    background: linear-gradient(0.25turn, #8BDCDE, #ECF2D8, #FFB5C1);
 }
 
 header {
     display: flex;
-    position: fixed;
-    left: 0;
-    right: 0;
     align-items: center;
     justify-content: space-between;
     border-bottom: 3px solid black;
     padding: 10px;
     height: 150px;
-}
-
-footer {
-    height: 80px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    background-color: #495C6E;
 }
 
 a {
@@ -37,18 +26,148 @@ a {
     padding: 10px;
     margin: 10px;
     font-weight: bold;
+    color: #8BDCDE;
+    text-shadow: 8px 8px 9px black;
 }
 
 h1 {
     padding: 10px;
     margin: 10px;
+    color: #ECF2D8;
+    text-shadow: 8px 8px 9px black;
 }
 
 main {
     max-height: 100%;
     display: block;
-    border: 1px solid black;
-    padding: 85px 24px 96px;
+    padding: 25px 24px 96px;
+    background-color: rgba(222,217,219,0.2);
+}
+
+h2 {
+    font-family: Rockwell, Garamond, Serif;
+    font-size: 90px;
+    font-weight: bolder;
+    padding: 10px;
+    display: block;
+    margin: 10px 10px 15px 40px;
+    color: #541F24;
+    text-shadow: 3px 3px 4px black;
+}
+
+h3 {
+    font-family: Rockwell, Garamond, Serif;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 0px;
+    background-color: #495C6E;
+    color: #ECF2D8;
+    text-shadow: 3px 3px 4px black;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #495C6E;
+}
+
+.portrait {
+    height: 900px;
+    width: auto;
+    float: inline-end;
+    margin-right: 300px;
+    box-shadow: 20px 15px 15px #1F0B0D;
+    border-radius: 10px;
+}
+
+.hobbyimage {
+    height: auto;
+    width: 700px;
+    float: left;
+    margin-left: 50px;
+    box-shadow: 20px 15px 15px #1F0B0D;
+    border-radius: 10px;
+}
+
+.projectimage {
+    height: auto;
+    width: 700px;
+    float: right;
+    margin-right: 50px;
+    box-shadow: 20px 15px 15px #1F0B0D;
+    border-radius: 10px;
+}
+
+.selectedpage {
+    text-decoration: underline;
+    color: #ECF2D8;
+    text-shadow: 8px 8px 9px black;
+}
+
+.introcontainer {
+    margin: 0px 10px 10px 10px;
+}
+
+.projectcontainer, .hobbycontainer {
+    height: 800px;
+    margin-bottom: 40px;
+}
+
+.mission {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 150px;
+    display: inline-block;
+    margin: 300px 10px 10px 50px;
+    color: #541F24;
+    border: 50px solid #541F24;
+    box-shadow: 20px 15px 15px #1F0B0D;
+    text-shadow: 3px 3px 4px black;
+}
+
+.quote {
+    display: block;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 150px;
+    color: #541F24;
+    font-weight: bolder;
+    text-shadow: 3px 3px 4px black;
+}
+
+.hobby {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 60%;
+    padding-left: 100px;
+    color: #541F24;
+    font-weight: bold;
+}
+
+.project {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 50%;
+    padding: 50px 100px 50px 200px;
+    color: #541F24;
+    font-weight: bold;
+}
+
+.title  {
+    font-family: Rockwell, Garamond, Serif;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 10px 0px;
+    color: #541F24;
+    background: linear-gradient(0.25turn, #8BDCDE, #ECF2D8, #FFB5C1);
+    border-bottom: 5px solid #541F24;
+    text-shadow: 3px 3px 4px black;
 }
 
 #name {
@@ -65,64 +184,4 @@ main {
     font-weight: 500;
     display: block;
     padding: 15px 25px 15px 5px;
-}
-
-.portrait {
-    height: 900px;
-    width: auto;
-    float: right;
-    padding-right: 50px;
-    border: 1px solid black;
-}
-
-.hobbyimage {
-    height: auto;
-    width: 300px;
-}
-
-.projectimage {
-    height: auto;
-    width: 300px;
-    display: inline-block;
-}
-
-.projecttextcontainer {
-    display: inline-block;
-}
-
-.selectedpage {
-    text-decoration: underline;
-}
-
-.introcontainer {
-    border: 1px solid black;
-    margin: 70px 10px 10px 10px;
-}
-
-.intro {
-    font-family: Rockwell, Garamond, Serif;
-    font-size: 90px;
-    font-weight: bold;
-    border: 1px solid black;
-    padding: 10px;
-    display: inline-block;
-    margin: 100px 10px 15px 10px;
-}
-
-.mission {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    font-weight: bold;
-    border: 1px solid black;
-    padding: 90px;
-    display: inline-block;
-    margin: 300px 10px 10px 10px;
-}
-
-.quote {
-    display: block;
-    text-align: center;
-    font-size: 80px;
-    margin-top: 275px;
-    border: 1px solid black;
 }
