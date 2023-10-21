@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     border-bottom: 3px solid black;
     padding: 10px;
-    height: 150px;
+    height: 80px;
     background-color: #495C6E;
 }
 
@@ -46,20 +46,20 @@ main {
 
 h2 {
     font-family: Rockwell, Garamond, Serif;
-    font-size: 90px;
+    font-size: 50px;
     font-weight: bolder;
     padding: 10px;
     display: block;
     margin: 10px 10px 15px 40px;
     color: #541F24;
-    text-shadow: 3px 3px 4px black;
+    text-shadow: 2px 2px 3px black;
 }
 
 h3 {
     font-family: Rockwell, Garamond, Serif;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: bolder;
-    padding: 10px;
+    padding: 5px 10px 5px 10px;
     margin: 0px;
     background-color: #495C6E;
     color: #ECF2D8;
@@ -67,24 +67,24 @@ h3 {
 }
 
 footer {
-    height: 50px;
+    height: 10px;
     width: 100%;
     text-align: center;
     background-color: #495C6E;
 }
 
 .portrait {
-    height: 900px;
+    height: 500px;
     width: auto;
     float: inline-end;
-    margin-right: 300px;
+    margin-right: 100px;
     box-shadow: 20px 15px 15px #1F0B0D;
     border-radius: 10px;
 }
 
 .hobbyimage {
     height: auto;
-    width: 700px;
+    width: 500px;
     float: left;
     margin-left: 50px;
     box-shadow: 20px 15px 15px #1F0B0D;
@@ -93,9 +93,9 @@ footer {
 
 .projectimage {
     height: auto;
-    width: 700px;
+    width: 400px;
     float: right;
-    margin-right: 50px;
+    margin-right: 25px;
     box-shadow: 20px 15px 15px #1F0B0D;
     border-radius: 10px;
 }
@@ -111,37 +111,39 @@ footer {
 }
 
 .projectcontainer, .hobbycontainer {
-    height: 800px;
-    margin-bottom: 40px;
+    height: 500px;
+    margin-bottom: 10px;
 }
 
 .mission {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: bold;
-    padding: 150px;
+    padding: 50px;
     display: inline-block;
-    margin: 300px 10px 10px 50px;
+    margin: 50px 200px 10px 50px;
     color: #541F24;
-    border: 50px solid #541F24;
-    box-shadow: 20px 15px 15px #1F0B0D;
-    text-shadow: 3px 3px 4px black;
+    border: 25px solid #541F24;
+    box-shadow: 10px 5px 5px #1F0B0D;
+    text-shadow: 1px 1px 2px black;
 }
 
 .quote {
     display: block;
     text-align: center;
-    font-size: 80px;
-    margin-top: 150px;
+    font-size: 60px;
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 700px;
     color: #541F24;
     font-weight: bolder;
-    text-shadow: 3px 3px 4px black;
+    text-shadow: 2px 2px 3px black;
 }
 
 .hobby {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     width: 60%;
     padding-left: 100px;
     color: #541F24;
@@ -151,28 +153,28 @@ footer {
 .project {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    width: 50%;
-    padding: 50px 100px 50px 200px;
+    font-size: 20px;
+    width: 60%;
+    padding: 15px 100px 50px 200px;
     color: #541F24;
     font-weight: bold;
 }
 
 .title  {
     font-family: Rockwell, Garamond, Serif;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bolder;
     padding: 10px;
     margin: 10px 0px;
     color: #541F24;
     background: linear-gradient(0.25turn, #8BDCDE, #ECF2D8, #FFB5C1);
     border-bottom: 5px solid #541F24;
-    text-shadow: 3px 3px 4px black;
+    text-shadow: 1px 1px 2px black;
 }
 
 #name {
     font-family: Rockwell, Garamond, Serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
     display: block;
     padding: 15px 5px 20px 25px;
@@ -180,7 +182,7 @@ footer {
 
 #links {
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 500;
     display: block;
     padding: 15px 25px 15px 5px;
