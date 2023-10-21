@@ -1,189 +1,190 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    max-width: 100%;
-    margin: 0 auto;
-    background: linear-gradient(0.25turn, #8BDCDE, #ECF2D8, #FFB5C1);
+  background: linear-gradient(0.25turn, #8bdcde, #ecf2d8, #ffb5c1);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 3px solid black;
-    padding: 10px;
-    height: 80px;
-    background-color: #495C6E;
+  align-items: center;
+  background-color: #495c6e;
+  border-bottom: 3px solid black;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 a {
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px;
-    font-weight: bold;
-    color: #8BDCDE;
-    text-shadow: 8px 8px 9px black;
+  color: #8bdcde;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  text-shadow: 8px 8px 9px black;
 }
 
 h1 {
-    padding: 10px;
-    margin: 10px;
-    color: #ECF2D8;
-    text-shadow: 8px 8px 9px black;
+  color: #ecf2d8;
+  margin: 10px;
+  padding: 10px;
+  text-shadow: 8px 8px 9px black;
 }
 
 main {
-    max-height: 100%;
-    display: block;
-    padding: 25px 24px 96px;
-    background-color: rgba(222,217,219,0.2);
+  background-color: rgba(222, 217, 219, 0.2);
+  display: block;
+  max-height: 100%;
+  padding: 25px 24px 96px;
 }
 
 h2 {
-    font-family: Rockwell, Garamond, Serif;
-    font-size: 50px;
-    font-weight: bolder;
-    padding: 10px;
-    display: block;
-    margin: 10px 10px 15px 40px;
-    color: #541F24;
-    text-shadow: 2px 2px 3px black;
+  color: #541f24;
+  display: block;
+  font-family: Rockwell, Garamond, Serif;
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 10px 10px 15px 40px;
+  padding: 10px;
+  text-shadow: 2px 2px 3px black;
 }
 
 h3 {
-    font-family: Rockwell, Garamond, Serif;
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 5px 10px 5px 10px;
-    margin: 0px;
-    background-color: #495C6E;
-    color: #ECF2D8;
-    text-shadow: 3px 3px 4px black;
+  background-color: #495c6e;
+  color: #ecf2d8;
+  font-family: Rockwell, Garamond, Serif;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0px;
+  padding: 5px 10px 5px 10px;
+  text-shadow: 3px 3px 4px black;
 }
 
 footer {
-    height: 10px;
-    width: 100%;
-    text-align: center;
-    background-color: #495C6E;
+  background-color: #495c6e;
+  height: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 .portrait {
-    height: 500px;
-    width: auto;
-    float: inline-end;
-    margin-right: 100px;
-    box-shadow: 20px 15px 15px #1F0B0D;
-    border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 20px 15px 15px #1f0b0d;
+  float: inline-end;
+  height: 500px;
+  margin-right: 100px;
+  width: auto;
 }
 
 .hobbyimage {
-    height: auto;
-    width: 500px;
-    float: left;
-    margin-left: 50px;
-    box-shadow: 20px 15px 15px #1F0B0D;
-    border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 20px 15px 15px #1f0b0d;
+  float: left;
+  height: auto;
+  margin-left: 50px;
+  width: 500px;
 }
 
 .projectimage {
-    height: auto;
-    width: 400px;
-    float: right;
-    margin-right: 25px;
-    box-shadow: 20px 15px 15px #1F0B0D;
-    border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 20px 15px 15px #1f0b0d;
+  float: right;
+  height: auto;
+  margin-right: 25px;
+  width: 400px;
 }
 
 .selectedpage {
-    text-decoration: underline;
-    color: #ECF2D8;
-    text-shadow: 8px 8px 9px black;
+  color: #ecf2d8;
+  text-decoration: underline;
+  text-shadow: 8px 8px 9px black;
 }
 
 .introcontainer {
-    margin: 0px 10px 10px 10px;
+  margin: 0px 10px 10px 10px;
 }
 
-.projectcontainer, .hobbycontainer {
-    height: 500px;
-    margin-bottom: 10px;
+.projectcontainer,
+.hobbycontainer {
+  height: 500px;
+  margin-bottom: 10px;
 }
 
 .mission {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 50px;
-    display: inline-block;
-    margin: 50px 200px 10px 50px;
-    color: #541F24;
-    border: 25px solid #541F24;
-    box-shadow: 10px 5px 5px #1F0B0D;
-    text-shadow: 1px 1px 2px black;
+  border: 25px solid #541f24;
+  box-shadow: 10px 5px 5px #1f0b0d;
+  color: #541f24;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 50px 200px 10px 50px;
+  padding: 50px;
+  text-shadow: 1px 1px 2px black;
 }
 
 .quote {
-    display: block;
-    text-align: center;
-    font-size: 60px;
-    margin-top: 100px;
-    margin-left: 300px;
-    width: 700px;
-    color: #541F24;
-    font-weight: bolder;
-    text-shadow: 2px 2px 3px black;
+  color: #541f24;
+  display: block;
+  font-size: 60px;
+  font-weight: bolder;
+  margin-left: 300px;
+  margin-top: 100px;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  width: 700px;
 }
 
 .hobby {
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    width: 60%;
-    padding-left: 100px;
-    color: #541F24;
-    font-weight: bold;
+  color: #541f24;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 100px;
+  width: 60%;
 }
 
 .project {
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    width: 60%;
-    padding: 15px 100px 50px 200px;
-    color: #541F24;
-    font-weight: bold;
+  color: #541f24;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 100px 50px 200px;
+  width: 60%;
 }
 
-.title  {
-    font-family: Rockwell, Garamond, Serif;
-    font-size: 30px;
-    font-weight: bolder;
-    padding: 10px;
-    margin: 10px 0px;
-    color: #541F24;
-    background: linear-gradient(0.25turn, #8BDCDE, #ECF2D8, #FFB5C1);
-    border-bottom: 5px solid #541F24;
-    text-shadow: 1px 1px 2px black;
+.title {
+  background: linear-gradient(0.25turn, #8bdcde, #ecf2d8, #ffb5c1);
+  border-bottom: 5px solid #541f24;
+  color: #541f24;
+  font-family: Rockwell, Garamond, Serif;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 10px 0px;
+  padding: 10px;
+  text-shadow: 1px 1px 2px black;
 }
 
 #name {
-    font-family: Rockwell, Garamond, Serif;
-    font-size: 30px;
-    font-weight: bolder;
-    display: block;
-    padding: 15px 5px 20px 25px;
+  display: block;
+  font-family: Rockwell, Garamond, Serif;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 15px 5px 20px 25px;
 }
 
 #links {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    display: block;
-    padding: 15px 25px 15px 5px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 25px 15px 5px;
 }
