@@ -3,22 +3,22 @@
 }
 
 html {
-  font-size: 16px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-image: url("/images/codebackground2.jpg");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 100%;
-  padding: 0;
   justify-content: center;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
 }
 
 header {
@@ -29,66 +29,61 @@ header {
   height: 5em;
   justify-content: space-between;
   padding: 0;
-  width: 100%;
-  z-index: 2;
   position: fixed;
   top: 0;
+  width: 100%;
+  z-index: 2!important;
 }
 
 a {
-  color: #a27f6d;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 0.03em 0.1em;
-  padding: 0.3em;
-  text-shadow: 8px 8px 9px #0d0e0f;
+  text-decoration: none;
 }
 
 h1 {
   color: #9ea8a8;
-  margin: 0.2em;
-  text-shadow: 8px 8px 9px #0d0e0f;
   display: block;
   font-size: 3em;
   font-weight: bolder;
+  margin: 0.2em;
   padding: 0.1em 0.1em 0.3em 0.1em;
+  text-shadow: 8px 8px 9px #0d0e0f;
 }
 
 main {
-  display: grid;
-  grid: repeat(5, 20%)/repeat(5, 20%);
-  padding: 8em 3em 1em 3em;
-  height: 100%;
-  z-index: 1;
   background-image: url("/images/codebackground2.jpg");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid: repeat(5, 20%)/repeat(5, 20%);
+  height: 100%;
+  padding: 8em 3em 1em 3em;
+  z-index: 1!important;
 }
 
 h2 {
   color: #9ea8a8;
   font-size: 4em;
   font-weight: bolder;
+  grid-area: 1 / 1 / 1 / 4;
   margin: -0.3em 0 0 1em;
   padding: 0.2em 0 0 0;
   text-shadow: 2px 2px 3px #0d0e0f;
-  grid-area: 1 / 1 / 1 / 4;
-  z-index: 2;
+  z-index: 2!important;
 }
 
 h3 {
   background-color: #626a74;
+  bottom: 0;
   color: #9ea8a8;
   font-size: 1.4em;
   font-weight: bolder;
   margin: 0;
   padding: 0.5em 1em;
-  text-shadow: 3px 3px 4px #0d0e0f;
   position: fixed;
-  bottom: 0;
-  z-index: 2;
+  text-shadow: 3px 3px 4px #0d0e0f;
   width: 100%;
+  z-index: 2!important;
 }
 
 footer {
@@ -107,22 +102,46 @@ label {
 }
 
 input {
-  color: #0d0e0f;
   background-color: #9ea8a8;
+  color: #0d0e0f;
 }
 
 textarea {
-  color: #0d0e0f;
   background-color: #9ea8a8;
+  color: #0d0e0f;
+}
+
+.button {
+  background-color: #9d9c90;
+  border-radius: 5px; 
+  border: none;
+  box-shadow: 7px 6px 28px 1px #0d0e0f; 
+  color: #2e2c27; 
+  cursor: pointer; 
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0.5em;
+  outline: none; 
+  padding: 0.4em 1em;
+  text-decoration:none;
+  text-shadow: 0 -1px 0 #9d9c90;
+  transition: 0.2s all;
+}
+
+.button:active {
+  background-color: #2e2c27;
+  box-shadow: 3px 2px 22px 1px #0d0e0f;
+  color: #9d9c90;
+  transform: scale(0.98); 
 }
 
 .portrait {
   border-radius: 1em;
   box-shadow: 20px 15px 15px #0d0e0f;
+  grid-area: 1 / 4 / 3 / 6;
   height: 30em;
   margin: 0 4em 0 10em;
   width: auto;
-  grid-area: 1 / 4 / 3 / 6;
 }
 
 .mission {
@@ -131,28 +150,28 @@ textarea {
   color: #9ea8a8;
   font-size: 2em;
   font-weight: bold;
+  grid-area: 2 / 1 / 3 / 3;
+  height: 10em;
   margin: 0 0 0 3em;
   padding: 2.5em 2em 0em 2em;
-  text-shadow: 1px 1px 2px #0d0e0f;
-  grid-area: 2 / 1 / 3 / 3;
   text-align: center;
-  height: 10em;
+  text-shadow: 1px 1px 2px #0d0e0f;
 }
 
 .quote {
   color: #9ea8a8;
   font-size: 4em;
   font-weight: bolder;
+  grid-area: 4 / 2 / 5 / 4;
+  justify-self: center;
   text-align: center;
   text-shadow: 2px 2px 3px #0d0e0f;
   width: 20em;
-  justify-self: center;
-  grid-area: 4 / 2 / 5 / 4;
 }
 
 .intro01 {
   color: #9ea8a8;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bolder;
   margin: -0.3em 0 0 1em;
   padding: 0.2em 0 0 0;
@@ -160,68 +179,62 @@ textarea {
   width: 100%;
 }
 
-.selectedpage {
-  color: #9ea8a8;
-  text-decoration: none;
-  text-shadow: 8px 8px 9px #0d0e0f;
-}
-
 .main01 {
-  display: flex;
-  padding: 8em 3em 1em 3em;
-  height: 100%;
-  z-index: 1;
-  flex-wrap: wrap;
   background-image: url("/images/codebackground2.jpg");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 8em 3em 1em 3em;
+  z-index: 1!important;
 }
 
 .title {
-  position: relative;
-  top: 2.5em;
-  margin: 0 0 0 4em;
-  width: 100%;
-  z-index: 3;
   background-color: transparent;
   color: #2e2c27;
   font-weight: bolder;
+  margin: 0 0 0 4em;
+  position: relative;
   text-shadow: none;
+  top: 2.5em;
+  width: 100%;
+  z-index: 3!important;
 }
 
 .image {
-  height: 25em;
-  width: auto;
-  z-index: 2;
-  margin: 0 0 2em 5em;
-  box-shadow: 20px 15px 15px #0d0e0f;
   border-radius: 0.75em; 
+  box-shadow: 20px 15px 15px #0d0e0f;
   filter: blur(0.5em);
+  height: 25em;
+  margin: 0 0 2em 5em;
+  width: auto;
+  z-index: 2!important;
 }
 
 .image:hover {
-  height: 25em;
-  width: auto;
-  z-index: 4;
-  filter: none;
   border-radius: 0.75em;
+  filter: none;
+  height: 25em;
   margin: 0 0 2em 5em;
+  width: auto;
+  z-index: 4!important;
 }
 
 .text {
-  height: 20%;
-  width: 50%;
-  z-index: 3;
-  position: relative;
-  top: 8em;
-  right: 8em;
+  background-color: rgba(46, 44, 39, 0.85);
+  border: 0.75em solid #9ea8a8;
+  box-shadow: 20px 15px 15px #0d0e0f;
   color: #9ea8a8;
   font-weight: bolder;
-  border: 0.75em solid #9ea8a8;
+  height: 20%;
   padding: 2em;
-  background-color: rgba(46, 44, 39, 0.85);
-  box-shadow: 20px 15px 15px #0d0e0f
+  position: relative;
+  right: 8em;
+  top: 8em;
+  width: 50%;
+  z-index: 3!important;
 }
 
 .formname, .formemail, .formmessage {
@@ -239,9 +252,32 @@ textarea {
 }
 
 .submit {
+  border-radius: 0.5em;
+  color: #2e2c27;
   font-size: 1.3em;
   font-weight: bold;
   margin: 0.2em;
   padding: 1em 2em;
-  border-radius: 0.5em;
+}
+
+#thankyoumessage {
+  background-color: transparent;
+  border: 0.3em solid #9ea8a8;
+  grid-area: 2 / 3 / 2 / 5;
+  height: 4em;
+  padding: 2em 2em 4.3em 2em;
+  position: relative;
+  text-align: center;
+  top: 10em;
+}
+
+#submitted {
+  color: #9ea8a8;
+  font-size: 4em;
+  font-weight: bolder;
+  grid-area: 1 / 3 / 1 / 5;
+  margin: -0.3em 0 0 1em;
+  padding: 0.2em 0 0 0;
+  text-shadow: 2px 2px 3px #0d0e0f;
+  z-index: 2!important;
 }
