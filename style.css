@@ -3,9 +3,12 @@
 }
 
 html {
-  background-color: white;
   font-size: 16px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image: url("/images/codebackground2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body {
@@ -20,8 +23,8 @@ body {
 
 header {
   align-items: center;
-  background-color: #495c6e;
-  border-bottom: 0.3em solid black;
+  background-color: #626a74;
+  border-bottom: 0.3em solid #0d0e0f;
   display: flex;
   height: 5em;
   justify-content: space-between;
@@ -33,18 +36,18 @@ header {
 }
 
 a {
-  color: #8bdcde;
+  color: #a27f6d;
   font-size: 1.5em;
   font-weight: bold;
   margin: 0.03em 0.1em;
   padding: 0.3em;
-  text-shadow: 8px 8px 9px black;
+  text-shadow: 8px 8px 9px #0d0e0f;
 }
 
 h1 {
-  color: #ecf2d8;
+  color: #9ea8a8;
   margin: 0.2em;
-  text-shadow: 8px 8px 9px black;
+  text-shadow: 8px 8px 9px #0d0e0f;
   display: block;
   font-size: 3em;
   font-weight: bolder;
@@ -52,32 +55,36 @@ h1 {
 }
 
 main {
-  background: linear-gradient(0.25turn, #8bdcde, #ecf2d8, #ffb5c1);
   display: grid;
   grid: repeat(5, 20%)/repeat(5, 20%);
   padding: 8em 3em 1em 3em;
   height: 100%;
   z-index: 1;
+  background-image: url("/images/codebackground2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h2 {
-  color: #541f24;
+  color: #9ea8a8;
   font-size: 4em;
   font-weight: bolder;
   margin: -0.3em 0 0 1em;
   padding: 0.2em 0 0 0;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 3px #0d0e0f;
   grid-area: 1 / 1 / 1 / 4;
+  z-index: 2;
 }
 
 h3 {
-  background-color: #495c6e;
-  color: #ecf2d8;
+  background-color: #626a74;
+  color: #9ea8a8;
   font-size: 1.4em;
   font-weight: bolder;
   margin: 0;
   padding: 0.5em 1em;
-  text-shadow: 3px 3px 4px black;
+  text-shadow: 3px 3px 4px #0d0e0f;
   position: fixed;
   bottom: 0;
   z-index: 2;
@@ -92,65 +99,83 @@ footer {
 }
 
 form {
-  grid-area: 2 / 3 / 4 / 5;
+  grid-area: 2 / 4 / 4 / 5;
+}
+
+label {
+  color: #9ea8a8;
+}
+
+input {
+  color: #0d0e0f;
+  background-color: #9ea8a8;
+}
+
+textarea {
+  color: #0d0e0f;
+  background-color: #9ea8a8;
 }
 
 .portrait {
   border-radius: 1em;
-  box-shadow: 20px 15px 15px #1f0b0d;
-  height: 32em;
+  box-shadow: 20px 15px 15px #0d0e0f;
+  height: 30em;
   margin: 0 4em 0 10em;
   width: auto;
   grid-area: 1 / 4 / 3 / 6;
 }
 
 .mission {
-  border: 0.7em solid #541f24;
-  box-shadow: 15px 7px 7px #1f0b0d;
-  color: #541f24;
+  border: 0.5em solid #9ea8a8;
+  box-shadow: 15px 7px 7px #0d0e0f;
+  color: #9ea8a8;
   font-size: 2em;
   font-weight: bold;
-  margin: 0 0 0 2em;
-  padding: 2.5em 4em 0 4em;
-  text-shadow: 1px 1px 2px black;
-  grid-area: 2 / 1 / 4 / 4;
+  margin: 0 0 0 3em;
+  padding: 2.5em 2em 0em 2em;
+  text-shadow: 1px 1px 2px #0d0e0f;
+  grid-area: 2 / 1 / 3 / 3;
   text-align: center;
+  height: 10em;
 }
 
 .quote {
-  color: #541f24;
+  color: #9ea8a8;
   font-size: 4em;
   font-weight: bolder;
   text-align: center;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 3px #0d0e0f;
   width: 20em;
   justify-self: center;
   grid-area: 4 / 2 / 5 / 4;
 }
 
 .intro01 {
-  color: #541f24;
+  color: #9ea8a8;
   font-size: 4em;
   font-weight: bolder;
   margin: -0.3em 0 0 1em;
   padding: 0.2em 0 0 0;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 3px #0d0e0f;
   width: 100%;
 }
 
 .selectedpage {
-  color: #ecf2d8;
+  color: #9ea8a8;
   text-decoration: none;
-  text-shadow: 8px 8px 9px black;
+  text-shadow: 8px 8px 9px #0d0e0f;
 }
 
 .main01 {
   display: flex;
-  background: linear-gradient(0.25turn, #8bdcde, #ecf2d8, #ffb5c1);
   padding: 8em 3em 1em 3em;
   height: 100%;
   z-index: 1;
   flex-wrap: wrap;
+  background-image: url("/images/codebackground2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -160,6 +185,9 @@ form {
   width: 100%;
   z-index: 3;
   background-color: transparent;
+  color: #2e2c27;
+  font-weight: bolder;
+  text-shadow: none;
 }
 
 .image {
@@ -167,17 +195,33 @@ form {
   width: auto;
   z-index: 2;
   margin: 0 0 2em 5em;
-  box-shadow: 20px 15px 15px #1f0b0d;
+  box-shadow: 20px 15px 15px #0d0e0f;
   border-radius: 0.75em; 
+  filter: blur(0.5em);
+}
+
+.image:hover {
+  height: 25em;
+  width: auto;
+  z-index: 4;
+  filter: none;
+  border-radius: 0.75em;
+  margin: 0 0 2em 5em;
 }
 
 .text {
-  height: 4em;
+  height: 20%;
   width: 50%;
   z-index: 3;
   position: relative;
   top: 8em;
   right: 8em;
+  color: #9ea8a8;
+  font-weight: bolder;
+  border: 0.75em solid #9ea8a8;
+  padding: 2em;
+  background-color: rgba(46, 44, 39, 0.85);
+  box-shadow: 20px 15px 15px #0d0e0f
 }
 
 .formname, .formemail, .formmessage {
@@ -185,6 +229,13 @@ form {
   font-weight: bold;
   margin: 0.2em;
   padding: 0.2em;
+}
+
+.formtext {
+  color: #9ea8a8;
+  font-size: 1.5em;
+  grid-area: 2/ 1 / 2 / 3;
+  margin: 1em 0 0 3em;
 }
 
 .submit {
