@@ -2,189 +2,282 @@
   box-sizing: border-box;
 }
 
+html {
+  background-image: url("/images/codebackground2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+}
+
 body {
-  background: linear-gradient(0.25turn, #8bdcde, #ecf2d8, #ffb5c1);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
+  max-height: 100%;
   max-width: 100%;
   padding: 0;
 }
 
 header {
   align-items: center;
-  background-color: #495c6e;
-  border-bottom: 3px solid black;
+  background-color: #626a74;
+  border-bottom: 0.3em solid #0d0e0f;
   display: flex;
-  height: 80px;
+  height: 5em;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2!important;
 }
 
 a {
-  color: #8bdcde;
-  font-weight: bold;
-  margin: 10px;
-  padding: 10px;
   text-decoration: none;
-  text-shadow: 8px 8px 9px black;
 }
 
 h1 {
-  color: #ecf2d8;
-  margin: 10px;
-  padding: 10px;
-  text-shadow: 8px 8px 9px black;
+  color: #9ea8a8;
+  display: block;
+  font-size: 3em;
+  font-weight: bolder;
+  margin: 0.2em;
+  padding: 0.1em 0.1em 0.3em 0.1em;
+  text-shadow: 8px 8px 9px #0d0e0f;
 }
 
 main {
-  background-color: rgba(222, 217, 219, 0.2);
-  display: block;
-  max-height: 100%;
-  padding: 25px 24px 96px;
+  background-image: url("/images/codebackground2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid: repeat(5, 20%)/repeat(5, 20%);
+  height: 100%;
+  padding: 8em 3em 1em 3em;
+  z-index: 1!important;
 }
 
 h2 {
-  color: #541f24;
-  display: block;
-  font-family: Rockwell, Garamond, Serif;
-  font-size: 50px;
+  color: #9ea8a8;
+  font-size: 4em;
   font-weight: bolder;
-  margin: 10px 10px 15px 40px;
-  padding: 10px;
-  text-shadow: 2px 2px 3px black;
+  grid-area: 1 / 1 / 1 / 4;
+  margin: -0.3em 0 0 1em;
+  padding: 0.2em 0 0 0;
+  text-shadow: 2px 2px 3px #0d0e0f;
+  z-index: 2!important;
 }
 
 h3 {
-  background-color: #495c6e;
-  color: #ecf2d8;
-  font-family: Rockwell, Garamond, Serif;
-  font-size: 20px;
+  background-color: #626a74;
+  bottom: 0;
+  color: #9ea8a8;
+  font-size: 1.4em;
   font-weight: bolder;
-  margin: 0px;
-  padding: 5px 10px 5px 10px;
-  text-shadow: 3px 3px 4px black;
+  margin: 0;
+  padding: 0.5em 1em;
+  position: fixed;
+  text-shadow: 3px 3px 4px #0d0e0f;
+  width: 100%;
+  z-index: 2!important;
 }
 
 footer {
-  background-color: #495c6e;
-  height: 10px;
+  background-color: transparent;
+  height: 2em;
   text-align: center;
   width: 100%;
 }
 
+form {
+  grid-area: 2 / 4 / 4 / 5;
+}
+
+label {
+  color: #9ea8a8;
+}
+
+input {
+  background-color: #9ea8a8;
+  color: #0d0e0f;
+}
+
+textarea {
+  background-color: #9ea8a8;
+  color: #0d0e0f;
+}
+
+.button {
+  background-color: #9d9c90;
+  border-radius: 5px; 
+  border: none;
+  box-shadow: 7px 6px 28px 1px #0d0e0f; 
+  color: #2e2c27; 
+  cursor: pointer; 
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0.5em;
+  outline: none; 
+  padding: 0.4em 1em;
+  text-decoration:none;
+  text-shadow: 0 -1px 0 #9d9c90;
+  transition: 0.2s all;
+}
+
+.button:active {
+  background-color: #2e2c27;
+  box-shadow: 3px 2px 22px 1px #0d0e0f;
+  color: #9d9c90;
+  transform: scale(0.98); 
+}
+
 .portrait {
-  border-radius: 10px;
-  box-shadow: 20px 15px 15px #1f0b0d;
-  float: inline-end;
-  height: 500px;
-  margin-right: 100px;
+  border-radius: 1em;
+  box-shadow: 20px 15px 15px #0d0e0f;
+  grid-area: 1 / 4 / 3 / 6;
+  height: 30em;
+  margin: 0 4em 0 10em;
   width: auto;
 }
 
-.hobbyimage {
-  border-radius: 10px;
-  box-shadow: 20px 15px 15px #1f0b0d;
-  float: left;
-  height: auto;
-  margin-left: 50px;
-  width: 500px;
-}
-
-.projectimage {
-  border-radius: 10px;
-  box-shadow: 20px 15px 15px #1f0b0d;
-  float: right;
-  height: auto;
-  margin-right: 25px;
-  width: 400px;
-}
-
-.selectedpage {
-  color: #ecf2d8;
-  text-decoration: underline;
-  text-shadow: 8px 8px 9px black;
-}
-
-.introcontainer {
-  margin: 0px 10px 10px 10px;
-}
-
-.projectcontainer,
-.hobbycontainer {
-  height: 500px;
-  margin-bottom: 10px;
-}
-
 .mission {
-  border: 25px solid #541f24;
-  box-shadow: 10px 5px 5px #1f0b0d;
-  color: #541f24;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  border: 0.5em solid #9ea8a8;
+  box-shadow: 15px 7px 7px #0d0e0f;
+  color: #9ea8a8;
+  font-size: 2em;
   font-weight: bold;
-  margin: 50px 200px 10px 50px;
-  padding: 50px;
-  text-shadow: 1px 1px 2px black;
+  grid-area: 2 / 1 / 3 / 3;
+  height: 10em;
+  margin: 0 0 0 3em;
+  padding: 2.5em 2em 0em 2em;
+  text-align: center;
+  text-shadow: 1px 1px 2px #0d0e0f;
 }
 
 .quote {
-  color: #541f24;
-  display: block;
-  font-size: 60px;
+  color: #9ea8a8;
+  font-size: 4em;
   font-weight: bolder;
-  margin-left: 300px;
-  margin-top: 100px;
+  grid-area: 4 / 2 / 5 / 4;
+  justify-self: center;
   text-align: center;
-  text-shadow: 2px 2px 3px black;
-  width: 700px;
+  text-shadow: 2px 2px 3px #0d0e0f;
+  width: 20em;
 }
 
-.hobby {
-  color: #541f24;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  padding-left: 100px;
-  width: 60%;
+.intro01 {
+  color: #9ea8a8;
+  font-size: 3em;
+  font-weight: bolder;
+  margin: -0.3em 0 0 1em;
+  padding: 0.2em 0 0 0;
+  text-shadow: 2px 2px 3px #0d0e0f;
+  width: 100%;
 }
 
-.project {
-  color: #541f24;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 15px 100px 50px 200px;
-  width: 60%;
+.main01 {
+  background-image: url("/images/codebackground2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 8em 3em 1em 3em;
+  z-index: 1!important;
 }
 
 .title {
-  background: linear-gradient(0.25turn, #8bdcde, #ecf2d8, #ffb5c1);
-  border-bottom: 5px solid #541f24;
-  color: #541f24;
-  font-family: Rockwell, Garamond, Serif;
-  font-size: 30px;
+  background-color: transparent;
+  color: #2e2c27;
   font-weight: bolder;
-  margin: 10px 0px;
-  padding: 10px;
-  text-shadow: 1px 1px 2px black;
+  margin: 0 0 0 4em;
+  position: relative;
+  text-shadow: none;
+  top: 2.5em;
+  width: 100%;
+  z-index: 3!important;
 }
 
-#name {
-  display: block;
-  font-family: Rockwell, Garamond, Serif;
-  font-size: 30px;
-  font-weight: bolder;
-  padding: 15px 5px 20px 25px;
+.image {
+  border-radius: 0.75em; 
+  box-shadow: 20px 15px 15px #0d0e0f;
+  filter: blur(0.5em);
+  height: 25em;
+  margin: 0 0 2em 5em;
+  width: auto;
+  z-index: 2!important;
 }
 
-#links {
-  display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 15px 25px 15px 5px;
+.image:hover {
+  border-radius: 0.75em;
+  filter: none;
+  height: 25em;
+  margin: 0 0 2em 5em;
+  width: auto;
+  z-index: 4!important;
+}
+
+.text {
+  background-color: rgba(46, 44, 39, 0.85);
+  border: 0.75em solid #9ea8a8;
+  box-shadow: 20px 15px 15px #0d0e0f;
+  color: #9ea8a8;
+  font-weight: bolder;
+  height: 20%;
+  padding: 2em;
+  position: relative;
+  right: 8em;
+  top: 8em;
+  width: 50%;
+  z-index: 3!important;
+}
+
+.formname, .formemail, .formmessage {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0.2em;
+  padding: 0.2em;
+}
+
+.formtext {
+  color: #9ea8a8;
+  font-size: 1.5em;
+  grid-area: 2/ 1 / 2 / 3;
+  margin: 1em 0 0 3em;
+}
+
+.submit {
+  border-radius: 0.5em;
+  color: #2e2c27;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0.2em;
+  padding: 1em 2em;
+}
+
+#thankyoumessage {
+  background-color: transparent;
+  border: 0.3em solid #9ea8a8;
+  grid-area: 2 / 3 / 2 / 5;
+  height: 4em;
+  padding: 2em 2em 4.3em 2em;
+  position: relative;
+  text-align: center;
+  top: 10em;
+}
+
+#submitted {
+  color: #9ea8a8;
+  font-size: 4em;
+  font-weight: bolder;
+  grid-area: 1 / 3 / 1 / 5;
+  margin: -0.3em 0 0 1em;
+  padding: 0.2em 0 0 0;
+  text-shadow: 2px 2px 3px #0d0e0f;
+  z-index: 2!important;
 }

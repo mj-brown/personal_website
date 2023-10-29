@@ -30,4 +30,3 @@ This is an example of the about page.
 ```
 This is an example of the portfolio page.
 # personal_website
-
